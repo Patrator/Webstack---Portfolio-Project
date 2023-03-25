@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 class info:
     def __init__(self, name, gender, phone_number, mail, religion):
         self.name = name
@@ -16,12 +14,15 @@ class info:
         self.religion = input("Enter your religion: ")
 
     def display_info(self):
+        print("BELOW ARE YOUR DETAILS")
+        print()
         print("Name:", self.name)
         print("gender:", self.gender)
         print("phone_number:", self.phone_number)
         print("Email:", self.mail)
 
-inst_1 = info("asre", 32, 9876555, "asre@gmail.com", "muslim")
-final = inst_1.get_info()
+inst_1 = info("asre", "male", 9876555, "asre@gmail.com", "muslim")
+next = inst_1.get_info()
+final = inst_1.display_info()
 
 print(final)
